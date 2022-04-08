@@ -1,0 +1,112 @@
+.card{
+    max-width: 400px;
+    height: auto;
+    margin: 10px;
+    -webkit-box-shadow: 1px 4px 16px -1px rgba(13, 27, 37, 0.2);
+    -moz-box-shadow: 1px 4px 16px -1px rgba(13, 27, 37, 0.2);
+    box-shadow: 1px 4px 16px -1px rgba(13, 27, 37, 0.2);
+
+}
+.wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.title-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.title-element{
+    max-width: 370px;
+    font-size: 1em;
+    margin-top: 10px;
+}
+.discription-elem{
+    margin-top: 10px;
+    margin-left: 10px;
+    max-width: 370px;
+
+}
+.date{
+    font-size: 15px;
+    color: lightslategray;
+}
+/****** BTN *******/
+.del-btn{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 70px;
+	height: 30px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	background: red;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+	background: #e62222;
+}
+.del-btn, button span{
+    transition: 200ms;
+}
+.del-btn .text{
+    transform: translateX(5px);
+	color: white;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+.del-btn .icon{
+    position: absolute;
+	border-left: 1px solid #c41b1b;
+	transform: translateX(50px);
+	height: 10px;
+	width: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.del-btn svg{
+    width: 15px;
+	fill: #eee;
+}
+.del-btn:hover{
+	background: #ff3636;
+}
+.del-btn:hover .text{
+    color: transparent;
+}
+.del-btn:hover .icon{
+    width: 20px;
+	border-left: none;
+	transform: translateX(19px);
+}
+.del-btn:focus {
+    outline: none;
+
+}
+.title-element{
+    margin-left: 10px;
+}
+
+
+
+.similar-card-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.similar-card {
+    width: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.similar-car-title {
+    font-size: 12px;
+}
+
+.similar-car-date {
+    font-size: 12px;
+}
+/****** BTN *******/
