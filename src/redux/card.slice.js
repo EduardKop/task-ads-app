@@ -29,7 +29,12 @@ const cardSlice = createSlice({
     removeFromCard: (state, action) => {
       const index = state.findIndex((item) => item.id === action.payload);
       state.splice(index, 1);
+      console.log(action);
     },
+    editCard: (state, action) => {
+      const index = state.findIndex((item) => item.id === action.payload.id);
+      state.splice(index, 1, {title: action.payload.title, discription: action.payload.discription, id: action.payload.id});
+    }
   },
 });
 
@@ -38,4 +43,5 @@ export const cardReducer = cardSlice.reducer;
 export const {
   addToCard,
   removeFromCard,
+  editCard
 } = cardSlice.actions;

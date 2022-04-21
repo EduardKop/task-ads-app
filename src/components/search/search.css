@@ -1,0 +1,14 @@
+.search-input{
+    height: 38px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    outline:none;
+    margin: 10px;
+    position: absolute;
+}
+
+
+.search-input::placeholder{
+}
+
+

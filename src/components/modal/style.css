@@ -1,0 +1,45 @@
+.modal-body{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.title-container{
+    display: flex;
+    flex-direction: column;
+}
+.discription-container{
+    margin-top: 20px;
+   
+    display: flex;
+    flex-direction: column;
+}
+.title{
+
+}
+
+.discription{
+    height: auto;
+    margin: 0px !important;
+    padding: 0px !important
+    ;
+}   
+.creating-btn{
+    margin: 10px;
+    background-color: transparent;
+    border-color: black;
+    color: black;
+}
+.creating-btn:hover{
+    background-color: black;
+    border-color: transparent;
+}
+.creating-btn:active{
+    background-color: red;
+}
+.creating-btn:focus, .creating-btn:active {
+    box-shadow: none !important;
+    outline: 0;
+    background-color: black;
+    color: white;
+    border-color: black;
+  }

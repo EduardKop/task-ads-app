@@ -1,6 +1,6 @@
 import React from "react";
 import AddNewCard from './components/new-ads/new-ads'
-import Card from './components/card/card'
+import Cards from './components/cards/cards'
 
 
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <AddNewCard/>
-      <Card/>
+      <Cards/>
     </div>
   );
 }
