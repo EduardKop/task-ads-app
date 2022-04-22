@@ -8,6 +8,31 @@
     border-radius: 2px;
 
 }
+.edit-btn {
+margin-right: 10px;
+min-width: 60px;
+background-color: transparent;
+border-radius: 5px;
+border: 1px solid black;
+}
+.edit-btn:hover{
+    background-color: black;
+    border-color: transparent;
+    color: white;
+}
+
+.edit-btn:focus {
+    box-shadow: none !important;
+}
+.edit-btn:active {
+    box-shadow: none !important;
+    outline: 0;
+    background-color: transparent;
+    border-color: black;
+    color: black;
+    outline:none;
+}
+
 .card::before, .card::after {
     content: '';
     position: absolute;
@@ -70,16 +95,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .del-wrap{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    margin-left: 10px;
 }
 .del-btn{
     width: 70px;
-	height: 30px;
+	height: 40px;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
@@ -88,6 +116,7 @@
 	border-radius: 5px;
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
 	background: #e62222;
+    margin-right: 10px;
 }
 .del-btn, button span{
     transition: 200ms;
@@ -136,7 +165,9 @@
 .similar-card-wrap {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    height: 40px;
+    margin: 0px;
+    margin-left: 10px;
 }
 
 .similar-card {
