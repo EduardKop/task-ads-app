@@ -25,9 +25,14 @@ return (
     <AdvModal
       show={showModal}
       onSaveClick={(title, discription) => {
-        dispatch(addToCard({id: nanoid(), title: title, discription: discription, date:(new Date()).toLocaleString()}));
+        if ((title!== undefined) && (discription !== undefined)) {
+          dispatch(addToCard({id: nanoid(), title: title, discription: discription, date:(new Date()).toLocaleString()}));
         saveState(store.getState().card);
         setShowModal(false);
+        } else {
+          alert ( 'заповніть поля' )
+        }
+        
       }}
       onCloseClick={handleClose}
     />
